@@ -27,8 +27,8 @@ public class CorporateController {
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/corporates/{id}")
-    public void updateCorporate(@RequestBody Corporate corporate, @PathVariable Integer id){
-        corporateService.updateCorporate(corporate,id);
+    public void updateCorporate(@RequestBody Corporate corporate){
+        corporateService.updateCorporate(corporate);
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/corporates/{id}")

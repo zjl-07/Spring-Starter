@@ -1,10 +1,19 @@
 package com.emilda.javasprintstarter.corporate;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Corporate {
+    @Id
     private Integer id;
     private String name;
     private String address;
     private String description;
+
+    public Corporate(){
+
+    }
 
     public Corporate(Integer id, String name, String address, String description) {
         this.id = id;
